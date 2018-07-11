@@ -34,13 +34,15 @@
     <p id="div2">Pizzaaaa</p>
 
     <p>this is a lot of 'P' tags!</p>
-    <p>HEEYYYYOOOOOO</p>
+    <div6>HEEYYYYOOOOOO</p>
     <p>Debooger is a joy</p>
     <h1 id="div3">We want to find job </h1>
     <button> Press here </button>
-
+    <br/>
+    <button id="SlideButton">Slide to the right!</button>
+    <div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
     <script>
-    $("button").click(function(){
+    $("#button").click(function(){
         $("#div1").fadeToggle();
         $("#div2").fadeToggle("slow");
         $("#div3").fadeToggle(3000);
@@ -50,6 +52,11 @@
         $("#flip").click(function(){
             $("#panel").slideDown("slow");
         });
+    });
+    $(document).ready(function(){
+    $("#SlideButton").click(function(){
+        $("div").animate({left: '250px'});
+    });
     });
     $("img").click(function(){
         $("#div5").fadeOut();
@@ -61,6 +68,7 @@
             $("#panel").slideDown("slow");
         });
     });
+    
     </script>
 
 </body>
