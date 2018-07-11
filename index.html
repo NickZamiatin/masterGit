@@ -6,13 +6,7 @@
     <title>Team Work Makes The Dream Work</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script> 
-    $(document).ready(function(){
-        $("#flip").click(function(){
-            $("#panel").slideDown("slow");
-        });
-    });
-    </script>
+
    <style> 
     #panel, #flip {
         padding: 5px;
@@ -31,41 +25,42 @@
     <div id="flip">Click to slide down panel</div>
     <div id="panel">Hello world!</div>
     <h1>I love React </h1>
-<div id="div1">
-    <h2>Can someone else bake cookies for once?</h2>
-</div>
-    <img  id ="div5"src="https://images.unsplash.com/photo-1513350660342-816d92510adf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e157c79b64658eae767177958757c961&auto=format&fit=crop&w=800&q=60">
+    <div id="div1">
+        <h2>Can someone else bake cookies for once?</h2>
+    </div>
+    <img id="div5"src="https://images.unsplash.com/photo-1513350660342-816d92510adf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e157c79b64658eae767177958757c961&auto=format&fit=crop&w=800&q=60">
     <p>Hoa doesnt know how to read instructions and the Nick's do</p>
     <p>ENGLANDDDDD WOOT WOOT</p>
-
-<p id="div2">Pizzaaaa</p>
+    <p id="div2">Pizzaaaa</p>
 
     <p>this is a lot of 'P' tags!</p>
     <p>HEEYYYYOOOOOO</p>
     <h1 id="div3">We want to find job </h1>
     <button> Press here </button>
 
-<script>
-$("button").click(function(){
-    $("#div1").fadeToggle();
-    $("#div2").fadeToggle("slow");
-    $("#div3").fadeToggle(3000);
-});
-
-$(document).ready(function(){
-    $("#flip").click(function(){
-        $("#panel").slideDown("slow");
+    <script>
+    $("button").click(function(){
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle(3000);
     });
-});
-</script>
 
+    $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideDown("slow");
+        });
+    });
+    $("img").click(function(){
+        $("#div5").fadeOut();
+    
+    });
 
-<script>
-$("img").click(function(){
-    $("#div5").fadeOut();
-  
-});
-</script>
+    $(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideDown("slow");
+        });
+    });
+    </script>
 
 </body>
 </html>
